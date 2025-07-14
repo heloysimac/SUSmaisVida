@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUS + Vida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SUS + Vida</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="agendamento.html">Agendar</a>
+      <a href="especialidades.html">Especialidades</a>
+      <a href="sintomas.html">Sintomas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Bem-vindo ao SUS + Vida</h2>
+    <p>Seu portal de saúde pública com atendimento de qualidade e acesso fácil.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SUS + Vida</p>
+  </footer>
+</body>
+</html>
