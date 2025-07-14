@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agendamentos - SUS + Vida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Agendamentos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="agendamento.html">Agendar</a>
+      <a href="especialidades.html">Especialidades</a>
+      <a href="sintomas.html">Sintomas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Agende sua Consulta ou Cirurgia</h2>
+    <form>
+      <label>Nome:</label><input type="text" /><br />
+      <label>Data:</label><input type="date" /><br />
+      <label>Tipo:</label>
+      <select>
+        <option>Consulta</option>
+        <option>Cirurgia</option>
+      </select><br />
+      <label>Especialidade:</label><input type="text" /><br />
+      <button>Agendar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SUS + Vida</p>
+  </footer>
+</body>
+</html>
