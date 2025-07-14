@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sintomas - SUS + Vida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Identifique seus Sintomas</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="agendamento.html">Agendar</a>
+      <a href="especialidades.html">Especialidades</a>
+      <a href="sintomas.html">Sintomas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Digite os sintomas que você está sentindo:</p>
+    <textarea rows="6" cols="50"></textarea><br />
+    <button>Enviar</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SUS + Vida</p>
+  </footer>
+</body>
+</html>
