@@ -5,45 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUS + Vida</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">SUS + Vida</div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Agendamentos</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Dúvidas</a></li>
-                <li><a href="#">Smart Watch</a></li>
-                <li><a href="#">Criar Perfil</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#agendamentos">Agendamentos</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href="#smartwatch">Smart Watch</a></li>
+                <li><a href="#perfil">Criar Perfil</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro">
+        <section class="intro" id="inicio">
             <h1>Bem-vindo ao SUS + Vida</h1>
-            <p>Conectando você à saúde pública com mais tecnologia, agilidade e cuidado.</p>
+            <p>O SUS + Vida é uma iniciativa tecnológica do Sistema Único de Saúde para oferecer atendimento mais moderno, inteligente e eficiente à população. Integrando especialidades médicas, agendamentos online, inteligência artificial para dúvidas e dispositivos tecnológicos, nosso objetivo é facilitar o cuidado com sua saúde.</p>
+            <img src="medicos.jpg" alt="Equipe médica" class="imagem-medica">
         </section>
 
-        <section class="formulario">
+        <section class="formulario" id="agendamentos">
+            <h2>Agende seu atendimento</h2>
+            <form onsubmit="return enviarFormulario(this, 'agendamento')">
+                <label for="procedimento">Procedimento:</label>
+                <input type="text" name="procedimento" required>
+
+                <label for="data">Data:</label>
+                <input type="date" name="data" required>
+
+                <label for="horario">Horário:</label>
+                <input type="time" name="horario" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+            <p id="resposta-agendamento"></p>
+        </section>
+
+        <section class="formulario" id="especialidades">
+            <h2>Especialidades Disponíveis</h2>
+            <ul class="especialidades">
+                <li>Cardiologia</li>
+                <li>Odontologia</li>
+                <li>Clínico Geral</li>
+                <li>Pediatria</li>
+                <li>Dermatologia</li>
+                <li>Neurologia</li>
+            </ul>
+        </section>
+
+        <section class="formulario" id="duvidas">
+            <h2>Dúvidas? Fale com nossa Agência Artificial</h2>
+            <form onsubmit="return enviarFormulario(this, 'duvida')">
+                <label for="pergunta">Escreva sua dúvida:</label>
+                <textarea name="pergunta" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="resposta-duvida"></p>
+        </section>
+
+        <section class="formulario" id="smartwatch">
+            <h2>Receba seu Smartwatch gratuito</h2>
+            <p>Nosso relógio inteligente monitora sua pressão e batimentos cardíacos. Enviaremos gratuitamente para seu endereço.</p>
+            <form onsubmit="return enviarFormulario(this, 'smartwatch')">
+                <label for="endereco">Endereço completo:</label>
+                <textarea name="endereco" rows="4" required></textarea>
+
+                <button type="submit">Solicitar</button>
+            </form>
+            <p id="resposta-smartwatch"></p>
+        </section>
+
+        <section class="formulario" id="perfil">
             <h2>Criar Perfil</h2>
-            <form>
+            <form onsubmit="return enviarFormulario(this, 'perfil')">
                 <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" name="nome" required>
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" name="email" required>
 
                 <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" required>
+                <input type="text" name="cpf" required>
 
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" name="senha" required>
 
                 <button type="submit">Criar Conta</button>
             </form>
+            <p id="resposta-perfil"></p>
         </section>
     </main>
 
