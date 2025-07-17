@@ -23,30 +23,27 @@
     </header>
 
     <main>
-        <section class="intro" id="inicio">
+        <section class="section" id="inicio">
             <h1>Bem-vindo ao SUS + Vida</h1>
-            <p>O SUS + Vida é uma iniciativa tecnológica do Sistema Único de Saúde para oferecer atendimento mais moderno, inteligente e eficiente à população. Integrando especialidades médicas, agendamentos online, inteligência artificial para dúvidas e dispositivos tecnológicos, nosso objetivo é facilitar o cuidado com sua saúde.</p>
+            <p>O SUS + Vida é uma iniciativa tecnológica do Sistema Único de Saúde para oferecer atendimento mais moderno, inteligente e eficiente à população.</p>
             <img src="medicos.jpg" alt="Equipe médica" class="imagem-medica">
         </section>
 
-        <section class="formulario" id="agendamentos">
+        <section class="section" id="agendamentos">
             <h2>Agende seu atendimento</h2>
             <form onsubmit="return enviarFormulario(this, 'agendamento')">
-                <label for="procedimento">Procedimento:</label>
+                <label>Procedimento:</label>
                 <input type="text" name="procedimento" required>
-
-                <label for="data">Data:</label>
+                <label>Data:</label>
                 <input type="date" name="data" required>
-
-                <label for="horario">Horário:</label>
+                <label>Horário:</label>
                 <input type="time" name="horario" required>
-
                 <button type="submit">Agendar</button>
             </form>
             <p id="resposta-agendamento"></p>
         </section>
 
-        <section class="formulario" id="especialidades">
+        <section class="section" id="especialidades">
             <h2>Especialidades Disponíveis</h2>
             <ul class="especialidades">
                 <li>Cardiologia</li>
@@ -58,59 +55,48 @@
             </ul>
         </section>
 
-        <section class="formulario" id="duvidas">
+        <section class="section" id="duvidas">
             <h2>Dúvidas? Fale com nossa Agência Artificial</h2>
             <form onsubmit="return enviarFormulario(this, 'duvida')">
-                <label for="pergunta">Escreva sua dúvida:</label>
+                <label>Escreva sua dúvida:</label>
                 <textarea name="pergunta" rows="5" required></textarea>
-
                 <button type="submit">Enviar</button>
             </form>
             <p id="resposta-duvida"></p>
         </section>
 
-        <section class="formulario" id="smartwatch">
+        <section class="section" id="smartwatch">
             <h2>Receba seu Smartwatch gratuito</h2>
-            <p>Nosso relógio inteligente monitora sua pressão e batimentos cardíacos. Enviaremos gratuitamente para seu endereço.</p>
+            <p>Preencha seus dados para envio:</p>
             <form onsubmit="return enviarFormulario(this, 'smartwatch')">
-                <label for="nome">Nome Completo:</label>
+                <label>Nome Completo:</label>
                 <input type="text" name="nome" required>
-
-                <label for="rua">Rua:</label>
+                <label>Rua:</label>
                 <input type="text" name="rua" required>
-
-                <label for="numero">Número:</label>
+                <label>Número:</label>
                 <input type="text" name="numero" required>
-
-                <label for="bairro">Bairro:</label>
+                <label>Bairro:</label>
                 <input type="text" name="bairro" required>
-
-                <label for="cidade">Cidade:</label>
+                <label>Cidade:</label>
                 <input type="text" name="cidade" required>
-
-                <label for="estado">Estado:</label>
+                <label>Estado:</label>
                 <input type="text" name="estado" required>
-
                 <button type="submit">Solicitar</button>
             </form>
             <p id="resposta-smartwatch"></p>
         </section>
 
-        <section class="formulario" id="perfil">
+        <section class="section" id="perfil">
             <h2>Criar Perfil</h2>
             <form onsubmit="return enviarFormulario(this, 'perfil')">
-                <label for="nome">Nome Completo:</label>
+                <label>Nome Completo:</label>
                 <input type="text" name="nome" required>
-
-                <label for="email">E-mail:</label>
+                <label>E-mail:</label>
                 <input type="email" name="email" required>
-
-                <label for="cpf">CPF:</label>
+                <label>CPF:</label>
                 <input type="text" name="cpf" required>
-
-                <label for="senha">Senha:</label>
+                <label>Senha:</label>
                 <input type="password" name="senha" required>
-
                 <button type="submit">Criar Conta</button>
             </form>
             <p id="resposta-perfil"></p>
