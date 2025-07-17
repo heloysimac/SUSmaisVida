@@ -109,3 +109,11 @@ footer {
     margin-top: 1rem;
     font-size: 1.1rem;
 }
+
+.aba {
+    display: none;
+}
+
+.aba.ativa {
+    display: block;
+}
