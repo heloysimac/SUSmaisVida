@@ -1,4 +1,49 @@
-/* ... (mantém o mesmo de antes e adiciona isso abaixo) ... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f4fff6;
+    color: #333;
+}
+
+header {
+    background-color: #007d47;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main {
+    padding: 2rem;
+}
+
+.intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
 .imagem-medica {
     width: 100%;
@@ -7,14 +52,57 @@
     border-radius: 10px;
 }
 
+.formulario {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: #007d47;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005c32;
+}
+
+footer {
+    background-color: #e0f2e9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
 .especialidades {
     list-style-type: disc;
     padding-left: 1.5rem;
     font-size: 1.1rem;
-}
-
-textarea {
-    padding: 0.7rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
