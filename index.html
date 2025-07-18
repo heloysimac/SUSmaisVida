@@ -1,110 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUS + Vida</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SUS + Vida</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">SUS + Vida</div>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="mostrarAba('inicio')">Início</a></li>
-                <li><a href="#" onclick="mostrarAba('agendamentos')">Agendamentos</a></li>
-                <li><a href="#" onclick="mostrarAba('especialidades')">Especialidades</a></li>
-                <li><a href="#" onclick="mostrarAba('duvidas')">Dúvidas</a></li>
-                <li><a href="#" onclick="mostrarAba('smartwatch')">Smart Watch</a></li>
-                <li><a href="#" onclick="mostrarAba('perfil')">Criar Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="section aba" id="inicio">
-            <h1>Bem-vindo ao SUS + Vida</h1>
-            <p>O SUS + Vida é uma iniciativa tecnológica do Sistema Único de Saúde para oferecer atendimento mais moderno, inteligente e eficiente à população.</p>
-            <img src="medicos.jpg" alt="Equipe médica" class="imagem-medica">
-        </section>
-
-        <section class="section aba" id="agendamentos">
-            <h2>Agende seu atendimento</h2>
-            <form onsubmit="return enviarFormulario(this, 'agendamento')">
-                <label>Procedimento:</label>
-                <input type="text" name="procedimento" required>
-                <label>Data:</label>
-                <input type="date" name="data" required>
-                <label>Horário:</label>
-                <input type="time" name="horario" required>
-                <button type="submit">Agendar</button>
-            </form>
-            <p id="resposta-agendamento"></p>
-        </section>
-
-        <section class="section aba" id="especialidades">
-            <h2>Especialidades Disponíveis</h2>
-            <ul class="especialidades">
-                <li>Cardiologia</li>
-                <li>Odontologia</li>
-                <li>Clínico Geral</li>
-                <li>Pediatria</li>
-                <li>Dermatologia</li>
-                <li>Neurologia</li>
-            </ul>
-        </section>
-
-        <section class="section aba" id="duvidas">
-            <h2>Dúvidas? Fale com nossa Agência Artificial</h2>
-            <form onsubmit="return enviarFormulario(this, 'duvida')">
-                <label>Escreva sua dúvida:</label>
-                <textarea name="pergunta" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="resposta-duvida"></p>
-        </section>
-
-        <section class="section aba" id="smartwatch">
-            <h2>Receba seu Smartwatch gratuito</h2>
-            <p>Preencha seus dados para envio:</p>
-            <form onsubmit="return enviarFormulario(this, 'smartwatch')">
-                <label>Nome Completo:</label>
-                <input type="text" name="nome" required>
-                <label>Rua:</label>
-                <input type="text" name="rua" required>
-                <label>Número:</label>
-                <input type="text" name="numero" required>
-                <label>Bairro:</label>
-                <input type="text" name="bairro" required>
-                <label>Cidade:</label>
-                <input type="text" name="cidade" required>
-                <label>Estado:</label>
-                <input type="text" name="estado" required>
-                <button type="submit">Solicitar</button>
-            </form>
-            <p id="resposta-smartwatch"></p>
-        </section>
-
-        <section class="section aba" id="perfil">
-            <h2>Criar Perfil</h2>
-            <form onsubmit="return enviarFormulario(this, 'perfil')">
-                <label>Nome Completo:</label>
-                <input type="text" name="nome" required>
-                <label>E-mail:</label>
-                <input type="email" name="email" required>
-                <label>CPF:</label>
-                <input type="text" name="cpf" required>
-                <label>Senha:</label>
-                <input type="password" name="senha" required>
-                <button type="submit">Criar Conta</button>
-            </form>
-            <p id="resposta-perfil"></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 SUS + Vida. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Apenas exemplo da estrutura -->
+  <section id="agendamento">
+    <form onsubmit="return enviarFormulario(this, 'agendamento')">
+      <input name="nome" placeholder="Nome" required>
+      <button type="submit">Agendar</button>
+    </form>
+    <div id="resposta-agendamento"></div>
+  </section>
 </body>
 </html>
